@@ -1,0 +1,23 @@
+{
+  "name": "xp-doc-viewer",
+  "license": "BSD-3-Clause",
+  "version": "0.8.0",
+  "description": "This component is used to parse and display a documentation page.",
+  "authors": [
+    "Giuliano Rullo <g.rullo@expandjs.com>",
+    "Maurizio Stefàno <m.stefano@expandjs.com>",
+    "Robert Manolea <r.manolea@expandjs.com>"
+  ],
+  "main": [
+    "xp-doc-viewer.html"
+  ],
+  "keywords": [
+    "web-components"
+  ],
+  "dependencies": {
+    "expandjs": "ExpandJS/expandjs",
+    "xp-doc-page": "ExpandJS/xp-doc-page",
+    "xp-doc-parser": "ExpandJS/xp-doc-parser",
+    "polymer": "Polymer/polymer#^0.5"
+  }
+}
