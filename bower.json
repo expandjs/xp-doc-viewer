@@ -1,8 +1,8 @@
 {
   "name": "xp-doc-viewer",
   "license": "BSD-3-Clause",
-  "version": "0.8.4",
-  "description": "This element is used to parse and display a documentation page.",
+  "version": "0.8.5",
+  "description": "A custom element used to parse and diaplay the documentation of an HTML or Javascript file",
   "homepage": "http://www.expandjs.com/elements/xp-doc-viewer",
   "authors": [
     "Giuliano Rullo <g.rullo@expandjs.com>",
