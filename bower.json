@@ -9,9 +9,6 @@
     "Maurizio Stefàno <m.stefano@expandjs.com>",
     "Robert Manolea <r.manolea@expandjs.com>"
   ],
-  "keywords": [
-    "web-components"
-  ],
   "main": [
     "xp-doc-viewer.html"
   ],
