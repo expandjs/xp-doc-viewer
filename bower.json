@@ -13,12 +13,7 @@
     "xp-doc-viewer.html"
   ],
   "ignore": [
-    "**/.*",
-    "bin",
-    "index.js",
-    "lib",
-    "node_modules",
-    "package.json"
+    "**/.*"
   ],
   "dependencies": {
     "expandjs": "ExpandJS/expandjs",
