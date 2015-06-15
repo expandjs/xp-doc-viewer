@@ -16,9 +16,9 @@
     "**/.*"
   ],
   "dependencies": {
-    "expandjs": "ExpandJS/expandjs",
-    "xp-doc-page": "ExpandJS/xp-doc-page",
-    "xp-doc-parser": "ExpandJS/xp-doc-parser",
+    "expandjs": "ExpandJS/expandjs#alpha",
+    "xp-doc-page": "ExpandJS/xp-doc-page#alpha",
+    "xp-doc-parser": "ExpandJS/xp-doc-parser#alpha",
     "polymer": "Polymer/polymer#^0.5"
   }
 }
