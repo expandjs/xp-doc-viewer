@@ -19,6 +19,6 @@
     "expandjs": "ExpandJS/expandjs#0.9.1",
     "xp-doc-page": "ExpandJS/xp-doc-page#0.9.1",
     "xp-doc-parser": "ExpandJS/xp-doc-parser#0.9.1",
-    "polymer": "Polymer/polymer#^1.0.4"
+    "polymer": "Polymer/polymer#^1.0.0"
   }
 }
