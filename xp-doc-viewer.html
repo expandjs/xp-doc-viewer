@@ -15,15 +15,18 @@ This element is used to parse and display a documentation page.
 @homepage http://expandjs.com/elements/xp-doc-viewer
 
 @wraps xp-doc-page http://expandjs.com/elements/xp-doc-page
+@behavior xp-adapter-behavior http://expandjs.com/elements/xp-adapter-behavior
 
 @dependency polymer Polymer/polymer#^1.0.0
 @dependency expandjs ExpandJS/expandjs#0.9.4
+@dependency xp-adapter-behavior ExpandJS/xp-adapter-behavior#0.9.4
 @dependency xp-doc-page ExpandJS/xp-doc-page#0.9.4
 @dependency xp-doc-parser ExpandJS/xp-doc-parser#0.9.4
 -->
 
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="../expandjs/expandjs.html">
+<link rel="import" href="../xp-adapter-behavior/xp-adapter-behavior.html">
 <link rel="import" href="../xp-doc-page/xp-doc-page.html">
 <link rel="import" href="../xp-doc-parser/xp-doc-parser.html">
 
@@ -46,6 +49,11 @@ This element is used to parse and display a documentation page.
 
             // ELEMENT
             is: 'xp-doc-viewer',
+
+            // BEHAVIORS
+            behaviors: [
+                Polymer.XPAdapterBehavior
+            ],
 
             /*********************************************************************/
 
@@ -76,6 +84,13 @@ This element is used to parse and display a documentation page.
                     type: String,
                     value: null
                 }
+            },
+
+            /*********************************************************************/
+
+            // LISTENER
+            ready: function () {
+                this._adapt(this.$.xpDocViewerPage);
             }
         });
     </script>
