@@ -14,14 +14,14 @@ This element is used to parse and display a documentation page.
 @group contents
 @homepage http://expandjs.com/elements/xp-doc-viewer
 
-@wraps xp-doc-page http://expandjs.com/elements/xp-doc-page
-@behavior xp-adapter-behavior http://expandjs.com/elements/xp-adapter-behavior
+@adapts xp-doc-parser /bower_components/xp-doc-parser/xp-doc-parser.html
+@behavior xp-adapter-behavior /bower_components/xp-adapter-behavior/xp-adapter-behavior.html
 
 @dependency polymer Polymer/polymer#^1.0.0
-@dependency expandjs ExpandJS/expandjs#0.9.4
-@dependency xp-adapter-behavior ExpandJS/xp-adapter-behavior#0.9.4
-@dependency xp-doc-page ExpandJS/xp-doc-page#0.9.4
-@dependency xp-doc-parser ExpandJS/xp-doc-parser#0.9.4
+@dependency expandjs ExpandJS/expandjs#0.9.5
+@dependency xp-adapter-behavior ExpandJS/xp-adapter-behavior#0.9.5
+@dependency xp-doc-page ExpandJS/xp-doc-page#0.9.5
+@dependency xp-doc-parser ExpandJS/xp-doc-parser#0.9.5
 -->
 
 <link rel="import" href="../polymer/polymer.html">
@@ -40,7 +40,7 @@ This element is used to parse and display a documentation page.
     </style>
 
     <template>
-        <xp-doc-parser id="xpDocViewerParser" data="{{data}}" url="[[url]]"></xp-doc-parser>
+        <xp-doc-parser id="xpDocViewerParser" data="{{data}}" empty-data="{{emptyData}}" url="[[url]]"></xp-doc-parser>
         <xp-doc-page id="xpDocViewerPage" data="[[data]]"></xp-doc-page>
     </template>
 
@@ -71,6 +71,20 @@ This element is used to parse and display a documentation page.
                 data: {
                     notify: true,
                     type: Object
+                },
+
+                /**
+                 * If set to true, the data are not ready yet.
+                 *
+                 * @attribute empty-data
+                 * @type boolean
+                 * @notifies
+                 * @readonly
+                 */
+                emptyData: {
+                    notify: true,
+                    reflectToAttribute: true,
+                    type: Boolean
                 },
 
                 /**
