@@ -2,15 +2,13 @@
   "name": "xp-doc-viewer",
   "license": "BSD-3-Clause",
   "version": "0.9.6",
+  "main": "xp-doc-viewer.html",
   "description": "A custom element used to parse and diaplay the documentation of an HTML or Javascript file",
   "homepage": "http://expandjs.com/elements/xp-doc-viewer",
   "authors": [
     "Giuliano Rullo <g.rullo@expandjs.com>",
     "Maurizio Stefàno <m.stefano@expandjs.com>",
     "Robert Manolea <r.manolea@expandjs.com>"
-  ],
-  "main": [
-    "xp-doc-viewer.html"
   ],
   "ignore": [
     "**/.*"
