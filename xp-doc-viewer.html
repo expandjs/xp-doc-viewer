@@ -33,16 +33,18 @@ This element is used to parse and display a documentation page.
 
 <dom-module id="xp-doc-viewer">
 
-    <style>
-        :host {
-            display: block;
-            overflow: visible;
-        }
-    </style>
-
     <template>
+
+        <style>
+            :host {
+                display: block;
+                overflow: visible;
+            }
+        </style>
+
         <xp-doc-parser id="xpDocViewerParser" data="{{data}}" empty-data="{{emptyData}}" url="[[url]]" recursive></xp-doc-parser>
         <xp-doc-page id="xpDocViewerPage" data="[[data]]"></xp-doc-page>
+
     </template>
 
     <script>
