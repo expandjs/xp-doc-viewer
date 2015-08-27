@@ -18,6 +18,6 @@
     "xp-adapter-behavior": "ExpandJS/xp-adapter-behavior#0.9.8",
     "xp-doc-page": "ExpandJS/xp-doc-page#0.9.8",
     "xp-doc-parser": "ExpandJS/xp-doc-parser#0.9.8",
-    "polymer": "Polymer/polymer#^1.0.0"
+    "polymer": "Polymer/polymer#^1.1.0"
   }
 }
