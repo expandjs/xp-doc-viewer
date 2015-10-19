@@ -18,9 +18,9 @@ This element is used to parse and display a documentation page.
 @adapts xp-doc-parser /bower_components/xp-doc-parser/xp-doc-parser.html
 
 @dependency polymer Polymer/polymer#^1.1.0
-@dependency expandjs ExpandJS/expandjs#0.9.10
-@dependency xp-doc-page ExpandJS/xp-doc-page#0.9.10
-@dependency xp-doc-parser ExpandJS/xp-doc-parser#0.9.10
+@dependency expandjs ExpandJS/expandjs#0.9.11
+@dependency xp-doc-page ExpandJS/xp-doc-page#0.9.11
+@dependency xp-doc-parser ExpandJS/xp-doc-parser#0.9.11
 -->
 
 <link rel="import" href="../polymer/polymer.html">
@@ -104,6 +104,7 @@ This element is used to parse and display a documentation page.
                  * @type string
                  */
                 url: {
+                    reflectToAttribute: true,
                     type: String,
                     value: null
                 }
