@@ -1,3 +1,3 @@
 # xp-doc-viewer
 
-See the [`documentation page`](http://expandjs.com/elements/xp-doc-viewer) for more information.
+This repository **is deprecated**. Use [`mat-docs`](https://github.com/expandjs/mat-docs) instead.
